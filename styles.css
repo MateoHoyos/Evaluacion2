@@ -1,0 +1,90 @@
+header{
+    display:grid;
+    grid-template-areas: 
+      "logo contenedor1 contenedor2";
+    grid-template-columns: 1fr 1fr 1fr; 
+    background-color:rgba(255, 179, 120, 0.48);
+    border:2px solid black;
+  }
+
+
+.logo{
+    grid-area:logo;
+    font: message-box;
+    font-size: 50px;
+    text-align:center;
+    margin: 5%;
+    color: rgb(11, 50, 21);
+    
+}
+
+.contenedor1{
+    grid-area:contenedor1;
+    text-align:center;
+    padding:10px;
+    margin: 5%;
+    font-size:30px;
+    display:flex;
+    justify-content:space-between;
+}
+
+
+a{
+    text-decoration:none;
+    color:inherit;
+    font-size:20px;  
+}
+
+a:hover{
+font-weight: bold;
+}
+
+.contenedor2{
+    grid-area:contenedor2;
+    display:flex;
+    justify-content:flex-end;
+    text-align:center;
+    margin: 5%;
+   
+}
+
+.busqueda{
+    display:flex;  
+    text-align:center;
+    border:2px solid black;
+  
+}
+
+
+input{
+    width: 200px;
+    height:20px;
+    border-radius: 5px;
+    padding: 10px;
+    border:0;
+    outline:none; 
+    top: 0;
+    left: 0;
+
+}
+
+.boton{
+    display:flex;
+    justify-content:center;
+    border-radius: 5px;
+    background-color: #096ff5;
+    cursor: pointer;
+    width:50px;
+    height:40px;
+    top: 0;
+    left: 0;
+
+  
+}
+    
+
+.boton:hover {
+    background-color: #03377c;
+    color: rgb(255, 255, 255);
+}
+
